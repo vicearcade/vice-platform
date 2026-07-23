@@ -1,0 +1,27 @@
+# -----------------
+# Classes configuration for BattleArena
+#
+# Documentation: https://docs.battleplugins.org/books/user-guide/page/classes
+# Support: https://discord.gg/tMVPVJf
+# GitHub: https://github.com/BattlePlugins/BattleArena
+# -----------------
+config-version: 1.0 # The config version, do not change!
+
+# Whether players need specific permission nodes in order to
+# equip classes. If set to true, players will need the permission
+# battlearena.classes.equip.<class-name> to equip the class.
+require-permission: true
+
+# Configuration for classes
+classes:
+  Brokie:
+    name: Brokie
+    items:
+    - itemsadder:brokie_ring
+    - copper_sword
+    equipment:
+      helmet: iron_helmet
+      chestplate: iron_chestplate
+      leggings: iron_leggings
+      boots: iron_boots
+      offhand: shield

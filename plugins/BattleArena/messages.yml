@@ -1,0 +1,161 @@
+classes-cannot-equip-class: <red>You cannot equip a class at this time.</red>
+classes-class-equipped: <green>You have equipped the class <gold>{}</gold>.</green>
+classes-class-not-found: <red>The class could not be found.</red>
+classes-not-enabled: <red>Classes are not enabled in this arena.</red>
+arena-advanced-phase: '<yellow>Advanced to the next phase: <gold>{}</gold>!</yellow>'
+arena-already-in-arena: <red>You are already in an arena!</red>
+arena-already-on-this-team: <red>You are already on the {} team!</red>
+arena-arena-with-name: <red>There is no arena with that name!</red>
+arena-cannot-join-arena-member-in-arena: <red>You cannot join an arena while a party
+  member is in an arena!</red>
+arena-cannot-join-arena-not-party-leader: <red>You must be the party leader to join
+  an arena!</red>
+arena-cannot-join-team-solo: <red>You cannot join a team in a solo arena!</red>
+arena-cannot-kick-self: <red>You cannot kick yourself from the arena! Use <gold>/{}
+  leave</gold> to leave the Arena.</red>
+arena-error: '<red>An error occurred while joining the arena: {}!</red>'
+arena-fight: <dark_red> O---[{==========> <yellow>Fight</yellow> \<==========}]---O
+  </dark_red>
+arena-full: <red>This arena is full!</red>
+arena-joined: <yellow>You have joined <gold>{}</gold>!</yellow>
+arena-kicked: <green>You have kicked <gold>{}</gold> from the arena!</green>
+arena-kicked-player: <red>You have been kicked from the arena!</red>
+arena-left: <yellow>You have left <gold>{}</gold>!</yellow>
+arena-manual-event-message: <yellow>%prefix% A {} event is starting! Run <gold>/{}
+  join</gold> to join!</yellow>
+arena-no-open-arenas: <red>There are no open arenas!</red>
+arena-no-open-maps-for-arena: <red>This arena has no open maps!</red>
+arena-no-phases: <red>There are no phases to advance to!</red>
+arena-no-running competitions: <red>No running competitions.</red>
+arena-no-team-with-name: <red>There is no team with the name <gold>{}</gold>!</red>
+arena-no-teams: <red>There are no teams in this arena!</red>
+arena-not-event: <red>The specified arena is not an event!</red>
+arena-not-in-arena: <red>You are not in an arena!</red>
+arena-not-joinable: <red>This arena is not joinable!</red>
+arena-not-on-team: <red>You are not on a team!</red>
+arena-not-spectatable: <red>This arena is not able to be spectated!</red>
+arena-phase: '<yellow>Phase: <gold>{}</gold>.</yellow>'
+arena-players: '<yellow>Players: <gold>{}/{}</gold>.</yellow>'
+arena-removed: <green>The arena <gold>{}</gold> has been removed!</green>
+arena-restoration-failed-to-create-schematic: <red>Failed to create schematic! Check
+  the console for more information.</red>
+arena-restoration-no-bounds: <red>You must first set the map bounds before executing
+  this command!</red>
+arena-restoration-schematic-created: <green>Schematic created for map <gold>{}</gold>.</green>
+arena-spectate: <yellow>You are now spectating <gold>{}</gold>!</yellow>
+arena-starts-cancelled: <red>Countdown cancelled as there is not enough players to
+  start!</red>
+arena-starts-in: <yellow>{} will start in <gold>{}</gold>!</yellow>
+arena-team-full: <red>The team {} is full!</red>
+arena-team-joined: <yellow>You have joined the {} team!</yellow>
+arena-team-left: <yellow>You have left the {} team!</yellow>
+arena-team-selection-not-available: <red>Team selection is not available at this time!</red>
+cannot-leave-arena: <red>You cannot leave the arena!</red>
+command-an-error-occurred: '<red>An error occurred while executing this command: {}!</red>'
+command-arena-does-not-exist: <red>An arena by the name of {} does not exist!</red>
+command-click-to-prepare: '<yellow>Click to prepare: <gold>{}</gold></yellow>'
+command-invalid-position: '<red>The specified position (<gold>{}</gold>) is not valid!
+  Expected format: <gold>\<x>,\<y>,\<z></gold>.</red>'
+command-invalid-type: <red>The specified type <gold>{}</gold> was not a valid {}!</red>
+command-must-be-player: <red>You must be a player to use this command!</red>
+command-no-permission: <red>You do not have permission to execute this command!</red>
+command-player-not-found: <red>The player <gold>{}</gold> could not be found!</red>
+command-unknown-error: <red>An unknown error occurred while executing this command!
+  Please contact a server administrator!</red>
+command-usage: '<red>Invalid syntax! Usage: {}</red>'
+duel-accepted-request: <yellow><gold>{}</gold> has accepted your duel request! The
+  duel will commence in <gold>5 seconds</gold>!</yellow>
+duel-cancelled-request: <red><gold>{}</gold> has cancelled their duel request!</red>
+duel-cannot-duel-self: <red>You cannot duel yourself!</red>
+duel-denied-request: <red><gold>{}</gold> has denied your duel request!</red>
+duel-no-requests: <red>You have no duel requests!</red>
+duel-pending-request: <red>You have a pending outgoing duel request! Type <gold>/arena
+  duel cancel</gold> to cancel.</red>
+duel-request-accepted: <yellow>You have accepted the duel request from <gold>{}</gold>!
+  The duel will commence in <gold>5 seconds</gold>!</yellow>
+duel-request-already-sent: <red>You have already have an outgoing duel request! Type
+  <gold>/{} duel cancel</gold> to cancel.</red>
+duel-request-cancelled: <yellow>You have cancelled your duel request to <gold>{}</gold>!</yellow>
+duel-request-cancelled-quit: <yellow>Your duel request from <gold>{}</gold> has been
+  cancelled as they have left the server.</yellow>
+duel-request-denied: <yellow>You have denied the duel request from <gold>{}</gold>!</yellow>
+duel-request-received: <yellow>You have received a duel request from <gold>{}</gold>!
+  Type <gold>/{} duel accept {}</gold> to accept or <gold>/{} duel deny {}</gold>
+  to deny.</yellow>
+duel-request-sent: <yellow>Duel request sent to <gold>{}</gold>!</yellow>
+duel-user-did-not-request: <red><gold>{}</gold> did not request a duel with you! You
+  can only accept requests from the user who sent it.</red>
+editor-entered: |-
+  <yellow>
+  You have just entered a wizard editor. Follow the steps that are prompted to advance through the wizard.
+
+  At any point, you can type "cancel" to exit.
+  </yellow>
+editor-error-already-in-editor: <red>You are already in an editor wizard! Type "cancel"
+  to exit.</red>
+editor-error-occurred-applying-changes: <red>An error occurred while applying changes.
+  Please see the console for more information!</red>
+editor-map-add-team-spawn: <yellow>Type "spawn" add a spawn for a team. Once you are
+  finished adding team spawns, type "done". If you wish to clear all spawns for a
+  certain team and start over, type "clear".</yellow>
+editor-map-add-team-spawn-added: <green>Added a spawn for team <gold>{}</gold>!</green>
+editor-map-add-team-spawn-cleared: <green>Cleared all spawns for team <gold>{}</gold>!</green>
+editor-map-add-team-spawn-team: <yellow>Enter the name of the team you would like
+  to add a spawn for. Type "cancel" to cancel.</yellow>
+editor-map-clear-team-spawn-team: <yellow>Enter the name of the team you would like
+  to clear all spawns for. Type "cancel" to cancel.</yellow>
+editor-map-create-name: <yellow>Enter a name for the map! Type "cancel" to cancel.</yellow>
+editor-map-created: <green>Successfully created map <gold>{}</gold> for {}!</green>
+editor-map-edited: <green>Successfully edited map <gold>{}</gold>!</green>
+editor-map-exists: <red>A map by that name already exists!</red>
+editor-map-failed-to-save: <red>An error occurred saving map <gold>{}</gold>! Please
+  see the console for errors.</red>
+editor-map-missing-team-spawns: '<red>You must add at least one spawn for each team!
+  Teams with no spawns: <gold>{}</gold></red>'
+editor-map-set-max-position: <yellow>Click a block to set the maximum (second) position
+  of the map region.</yellow>
+editor-map-set-min-position: <yellow>Click a block to set the minimum (first) position
+  of the map region.</yellow>
+editor-map-set-spectator-spawn: <yellow>Type "spectator" to set the spectator spawn,
+  or "cancel" to cancel.</yellow>
+editor-map-set-type: |-
+  <yellow>Enter the type of map. Valid options: <gold>static, dynamic</gold>.
+
+  <gray>-</gray> <gold>static</gold>: A map that is always in the same location (i.e. a survival world) and can only support one game at a time.
+  <gray>-</gray> <gold>dynamic</gold>: A map that is freshly created in a separate world on-demand. This map can support multiple games at once. Requires WorldEdit!
+  </yellow>
+editor-map-set-waitroom-spawn: <yellow>Type "waitroom" to set the waitroom spawn,
+  or "cancel" to cancel.</yellow>
+editor-wizard-closed: <green>Wizard closed!</green>
+header: <gray>------------------<gold>[</gold> <bold><yellow>{}</yellow></bold> <gold>]</gold>------------------</gray>
+prefix: <gold>[</gold><yellow>BattleArena</yellow><gold>]</gold>
+util-backup-created: <green>Successfully created backup for player <gold>{}</gold>!</green>
+util-backup-info: Backup <gold>{}</gold>
+util-backup-not-found: <red>A backup at this index could not be found!</red>
+util-backup-restored: <green>Successfully restored backup for player <gold>{}</gold>!</green>
+util-click-to-select: <yellow>Click to select!</yellow>
+util-day: day
+util-days: days
+util-debug-mode-set-to: <green>Debug mode set to <gold>{}</gold>!</green>
+util-disabled: <red>disabled</red>
+util-enabled: <green>enabled</green>
+util-hour: hour
+util-hours: hours
+util-invalid-input: '<red>Invalid input! Valid options: <gold>{}</gold></red>'
+util-invalid-inventory-cancelling: <red>Interacted with inventory that was not own...
+  cancelling item selection!</red>
+util-invalid-team-valid-teams: '<red>Invalid team! Valid teams: <gold>{}</gold>.</red>'
+util-inventory-backups: Backups
+util-millisecond: millisecond
+util-milliseconds: milliseconds
+util-minute: minute
+util-minutes: minutes
+util-module: <gray>-</gray> <gold>{}:</gold> {}
+util-modules: Modules
+util-no-backups: <red>No backups found for player <gold>{}</gold>!</red>
+util-reload-complete: <green>Reload complete in <gold>{}</gold>!</green>
+util-reload-failed: <red>Reload failed! Please see the console for more information.</red>
+util-second: second
+util-seconds: seconds
+util-starting-reload: <yellow>Reloading BattleArena...</yellow>
+util-valid-teams: '<yellow>Valid teams: <gold>{}</gold></yellow>'

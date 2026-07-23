@@ -1,0 +1,48 @@
+command /ssbdrop:
+    trigger:
+        set {_p} to player
+        set {_id} to uuid of {_p}
+
+        # 🔒 debounce (prevents holding spam)
+        if {ssb.clicklock::%{_id}%} is set:
+            stop
+        set {ssb.clicklock::%{_id}%} to true
+        wait 5 ticks
+        delete {ssb.clicklock::%{_id}%}
+
+        # initialize uses
+        if {ssb.uses::%{_id}%} is not set:
+            set {ssb.uses::%{_id}%} to 2
+
+        # cooldown check
+        if {ssb.cooldown::%{_id}%} is set:
+            set {_remaining} to difference between {ssb.cooldown::%{_id}%} and now
+
+            set {_seconds} to "%{_remaining}%"
+            replace all " seconds" in {_seconds} with ""
+            replace all " second" in {_seconds} with ""
+
+            send "&cYou are in cooldown ! &7(&e%{_seconds}%&6S&7)" to {_p}
+            stop
+
+        # use charge
+        remove 1 from {ssb.uses::%{_id}%}
+
+        # teleport up
+        set {_loc} to location of {_p}
+        set y-coordinate of {_loc} to y-coordinate of {_loc} + 9
+        teleport {_p} to {_loc}
+
+        # message (safe variable)
+        set {_uses} to {ssb.uses::%{_id}%}
+        send "&aSSB Drop used! (&e%{_uses}%&a left)" to {_p}
+
+        # cooldown reset
+        if {ssb.uses::%{_id}%} <= 0:
+            set {ssb.cooldown::%{_id}%} to now
+            add 5 seconds to {ssb.cooldown::%{_id}%}
+
+            wait 5 seconds
+
+            set {ssb.uses::%{_id}%} to 2
+            delete {ssb.cooldown::%{_id}%}

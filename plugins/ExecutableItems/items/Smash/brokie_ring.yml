@@ -1,0 +1,28 @@
+name: "&6&lBrokie Ring"
+material: STICK
+id: brokie_ring
+config_5: true
+config_update: true
+itemModel:
+hiders:
+  hideUsage: true
+activators:
+  activator0:
+    option: PLAYER_RIGHT_CLICK
+    typeTarget: NO_TYPE_TARGET
+    silenceOutput: true
+    
+    cooldownFeatures:
+      cooldown: 3
+      isCooldownInTicks: false
+      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_S%&6S&7)'
+      displayCooldownMessage: true
+      cancelEventIfInCooldown: true
+
+    detailedSlots:
+      - -1
+    playerCommands:
+      - 'RANDOM RUN: 1'
+      - effect give %player% minecraft:speed 10 1 true +++ tellraw %player% "SPEED!" 
+      - effect give %player% minecraft:strength 10 1 true +++ tellraw %player% "RAH!" 
+      - 'RANDOM END'

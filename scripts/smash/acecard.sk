@@ -1,0 +1,132 @@
+
+# =====================================================
+# CONFIG (SAFE GLOBALS)
+# =====================================================
+on load:
+    set {ace.maxammo} to 10
+    set {ace.regen.delay} to 0.2 second
+
+
+# =====================================================
+# PLAYER INIT
+# =====================================================
+on join:
+    if {ace.ammo::%player%} is not set:
+        set {ace.ammo::%player%} to {ace.maxammo}
+
+
+# =====================================================
+# SHOOT ACE CARD
+# =====================================================
+command /acecard:
+    trigger:
+
+        if {ace.ammo::%player%} is not set:
+            set {ace.ammo::%player%} to {ace.maxammo}
+
+        if {ace.ammo::%player%} <= 0:
+            send "&cNo cards left!" to player
+            stop
+
+        subtract 1 from {ace.ammo::%player%}
+        set {ace.lastshot::%player%} to now
+
+        shoot snowball from player at speed 2.5
+        set {ace.shooter::%uuid of last spawned entity%} to player
+
+
+# =====================================================
+# PROJECTILE HIT
+# =====================================================
+on projectile hit:
+
+    if projectile is snowball:
+
+        set {_id} to uuid of projectile
+        set {_p} to {ace.shooter::%{_id}%}
+
+        if {_p} is not set:
+            stop
+
+        set {_loc} to location of projectile
+
+        loop living entities in radius 2 around {_loc}:
+
+            if loop-entity is player:
+                if loop-entity is not {_p}:
+
+                    # =========================
+                    # STREAK
+                    # =========================
+                    if {ace.streak::%{_p}%} is not set:
+                        set {ace.streak::%{_p}%} to 0
+
+                    add 1 to {ace.streak::%{_p}%}
+
+                    # =========================
+                    # CHIP DAMAGE
+                    # =========================
+                    set {_dmg} to 1.5
+                    if {ace.streak::%{_p}%} >= 2:
+                        add 0.5 to {_dmg}
+
+                    damage loop-entity by {_dmg}
+
+                    # =========================
+                    # KNOCKBACK
+                    # =========================
+                    set {_vec} to location of loop-entity
+                    subtract location of {_p} from {_vec}
+                    set {_vec} to {_vec}.clone()
+
+                    set {_kb} to 0.8
+                    if {ace.streak::%{_p}%} >= 2:
+                        set {_kb} to 1.4
+
+                    set {_vec} to {_vec}.multiply({_kb})
+                    set velocity of loop-entity to {_vec}
+
+                    # FX
+                    make 1 crit particle at location of loop-entity
+                    make 1 cloud particle at location of loop-entity
+                    play sound "entity.arrow.hit_player" at loop-entity
+
+        delete {ace.shooter::%{_id}%}
+
+
+# =====================================================
+# AMMO REGEN (FIXED + RELIABLE)
+# =====================================================
+every 1 second:
+    loop all players:
+
+        if {ace.ammo::%loop-player%} is not set:
+            set {ace.ammo::%loop-player%} to {ace.maxammo}
+
+        if {ace.lastshot::%loop-player%} is not set:
+            set {ace.lastshot::%loop-player%} to now
+
+        if {ace.ammo::%loop-player%} < {ace.maxammo}:
+
+            if difference between now and {ace.lastshot::%loop-player%} > {ace.regen.delay}:
+                add 1 to {ace.ammo::%loop-player%}
+
+
+# =====================================================
+# HUD (ONLY WHEN HOLDING ITEM)
+# =====================================================
+every 2 ticks:
+    loop all players:
+
+        if loop-player's tool is stick:
+            if name of loop-player's tool is "&6Ace Card":
+
+                set {_ammo} to {ace.ammo::%loop-player%}
+
+                if {_ammo} is not set:
+                    set {_ammo} to {ace.maxammo}
+
+                if {_ammo} <= 1:
+                    send action bar "&c⚡ ACE CARDS &7| &cAmmo: %{_ammo}%/%{ace.maxammo}%" to loop-player
+                else:
+                    send action bar "&6Ace Cards &7| &eAmmo: %{_ammo}%/%{ace.maxammo}%" to loop-player

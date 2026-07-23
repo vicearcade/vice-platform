@@ -1,0 +1,23 @@
+portals:
+  lobbytocasino:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: n/a
+    location: hub:-7.0,29.0,-26.0:7.0,42.0,-26.0
+    action-type: multiverse-destination
+    action: e:world:-91.5,78.0,201.5:0.0:0.0
+    check-destination-safety: true
+    version: 1.2
+  casinotolobby:
+    currency: air
+    price: 0.0
+    safe-teleport: true
+    teleport-non-players: false
+    owner: n/a
+    location: world:-94.0,78.0,196.0:-89.0,81.0,196.0
+    action-type: multiverse-destination
+    action: e:hub:0.5,30.0,0.5:0.0:0.0
+    check-destination-safety: true
+    version: 1.2

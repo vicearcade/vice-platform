@@ -1,0 +1,34 @@
+command /ssbdash:
+    trigger:
+        set {_p} to player
+        set {_id} to uuid of {_p}
+
+        if {dash.uses::%{_id}%} is not set:
+            set {dash.uses::%{_id}%} to 2
+
+        if {dash.cooldown::%{_id}%} is set:
+
+            set {_remaining} to difference between {dash.cooldown::%{_id}%} and now
+
+            # convert to seconds WITHOUT fancy math
+            set {_seconds} to "%{_remaining}%"
+            replace all " seconds" in {_seconds} with ""
+            replace all " second" in {_seconds} with ""
+
+            send "&cYou are in cooldown ! &7(&e%{_seconds}%&6S&7)" to {_p}
+            stop
+
+        remove 1 from {dash.uses::%{_id}%}
+
+        push {_p} forward at speed 2
+
+        if {dash.uses::%{_id}%} <= 0:
+            set {dash.cooldown::%{_id}%} to now
+            add 4 seconds to {dash.cooldown::%{_id}%}
+
+            send "&7Dash exhausted! Recharging..."
+
+            wait 4 seconds
+
+            set {dash.uses::%{_id}%} to 2
+            delete {dash.cooldown::%{_id}%}

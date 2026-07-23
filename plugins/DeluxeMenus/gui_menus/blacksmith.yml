@@ -1,0 +1,305 @@
+menu_title: "&8Blacksmith"
+open_command: blacksmith
+size: 27
+
+items:
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: " "
+    slots:
+      - 0-27
+
+  # =========================
+  # Stone SWORD
+  # =========================
+  stone_sword_buy:
+    material: STONE_SWORD
+    slot: 10
+    display_name: "&fIron Sword"
+    lore:
+      - "&aPrice: $120"
+      - "&7Left-click to purchase for $120"
+      - "&7Right-click to sell for $60"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 120
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $120."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 120"
+      - "[console] give %player_name% stone_sword 1"
+      - "[message] &aPurchase successful! &fStone Sword acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: STONE_SWORD
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have an Stone Sword to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% stone_sword 1"
+      - "[console] eco give %player_name% 60"
+      - "[message] &aSold Stone Sword for &e$250&a!"
+      
+  # =========================
+  # IRON SWORD
+  # =========================
+  iron_sword_buy:
+    material: IRON_SWORD
+    slot: 11
+    display_name: "&fIron Sword"
+    lore:
+      - "&aPrice: $500"
+      - "&7Left-click to purchase for $500"
+      - "&7Right-click sell for $250"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 500
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $500."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 500"
+      - "[console] give %player_name% iron_sword 1"
+      - "[message] &aPurchase successful! &fIron Sword acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_SWORD
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have an Iron Sword to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_sword 1"
+      - "[console] eco give %player_name% 250"
+      - "[message] &aSold Iron Sword for &e$250&a!"
+
+  # =========================
+  # IRON Axe
+  # =========================
+  iron_axe_buy:
+    material: IRON_AXE
+    slot: 12
+    display_name: "&fIron Axe"
+    lore:
+      - "&aPrice: $650"
+      - "&7Left-click to purchase for $650"
+      - "&7Right-click to sell for $325"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 650
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $500."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 650"
+      - "[console] give %player_name% iron_axe 1"
+      - "[message] &aPurchase successful! &fIron Axe acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_AXE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have an Iron Axe to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_axe 1"
+      - "[console] eco give %player_name% 325"
+      - "[message] &aSold Iron Axe for &e$325&a!"
+      
+  # =========================
+  # Shield
+  # =========================
+  shield_buy:
+    material: SHIELD
+    slot: 13
+    display_name: "&fShield"
+    lore:
+      - "&aPrice: $600"
+      - "&7Left-click to purchase for $600"
+      - "&7Right-click to sell for $300"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 600
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $600."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 600"
+      - "[console] give %player_name% shield 1"
+      - "[message] &aPurchase successful! &fShield acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: SHIELD
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Shield to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% shield 1"
+      - "[console] eco give %player_name% 300"
+      - "[message] &aSold Shield for &e$300&a!"
+
+  # =========================
+  # Bow
+  # =========================
+  bow_buy:
+    material: BOW
+    slot: 14
+    display_name: "&fBow"
+    lore:
+      - "&aPrice: $350"
+      - "&7Left-click to purchase for $350"
+      - "&7Right-click to sell for $125"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 350
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $350."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 350"
+      - "[console] give %player_name% bow 1"
+      - "[message] &aPurchase successful! &fBow acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: BOW
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Bow to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% bow 1"
+      - "[console] eco give %player_name% 125"
+      - "[message] &aSold Bow for &e$125&a!"
+      
+  # =========================
+  # Arrows
+  # =========================
+  arrows_buy:
+    material: ARROW
+    slot: 15
+    display_name: "&fArrows (16)"
+    lore:
+      - "&aPrice: $30"
+      - "&7Left-click to purchase for $30"
+      - "&7Right-click to sell for $15"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 30
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $30."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 30"
+      - "[console] give %player_name% arrow 16"
+      - "[message] &aPurchase successful! &fArrows acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: ARROW
+          amount: 16
+
+      deny_commands:
+        - "[message] &cYou don't have Arrows to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% arrow 16"
+      - "[console] eco give %player_name% 15"
+      - "[message] &aSold Arrows for &e$15&a!"
+      
+  # =========================
+  # Mace
+  # =========================
+  mace_buy:
+    material: MACE
+    slot: 16
+    display_name: "&fMace"
+    lore:
+      - "&aPrice: $6,000"
+      - "&7Left-click to purchase for $6,000"
+      - "&7Right-click to sell for $3,000"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 6000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $6,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 6,000"
+      - "[console] give %player_name% mace 1"
+      - "[message] &aPurchase successful! &fMace acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: MACE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Mace to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% Mace 1"
+      - "[console] eco give %player_name% 3,000"
+      - "[message] &aSold Mace for &e$3,000&a!"

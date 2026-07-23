@@ -1,0 +1,100 @@
+menu_title: "&8Brokie"
+open_command: brokie
+size: 27
+
+items:
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: " "
+    slots:
+      - 0-26
+
+  ring:
+    material: itemsadder-iageneric:brokie_ring
+    slot: 10
+    display_name: "&6&lBrokie Ring"
+
+  helmet:
+    material: iron_helmet
+    slot: 12
+    display_name: "&6&lBrokie Helmet"
+
+  robe:
+    material: iron_chestplate
+    slot: 13
+    display_name: "&6&lBrokie Chestplate"
+
+  legs:
+    material: iron_leggings
+    slot: 14
+    display_name: "&6&lBrokie Leggings"
+
+  boots:
+    material: iron_boots
+    slot: 15
+    display_name: "&6&lBrokie Boots"
+
+  sword:
+    material: copper_sword
+    slot: 11
+    display_name: "&6&lBrokie Sword"
+
+  confirm:
+    material: itemsadder-mcicons:icon_confirm
+    slot: 26
+    display_name: "&aConfirm"
+    lore:
+      - "&aPrice: $0"
+      - "&7Left-click to select"
+
+    left_click_requirement:
+      requirements:
+        can_select:
+          type: has permission
+          permission: ssbkit.select
+
+        not_owned:
+          type: "!has permission"
+          permission: ssbkit.brokie
+
+        money_check:
+          type: ">="
+          input: "%vault_eco_balance%"
+          output: 0
+
+      deny_commands:
+        - "[message] &cYou already have this kit selected!"
+        - "[close]"
+
+    left_click_commands:
+      - "[console] eco take %player_name% 0"
+      - "[console] lp user %player_name% permission unset ssbkit.select"
+      - "[player] smash equip Brokie"
+      - "[console] lp user %player_name% permission set ssbkit.brokie"
+      - "[message] &aLoadout selected!"
+      - "[close]"
+
+  reset:
+    material: itemsadder-mcicons:icon_cancel
+    slot: 25
+    display_name: "&cReset"
+    lore:
+      - "&7Refunds kit selection"
+
+    left_click_requirement:
+      requirements:
+        owns_kit:
+          type: has permission
+          permission: ssbkit.brokie
+
+      deny_commands:
+        - "[message] &cYou don't have this kit selected!"
+        - "[close]"
+
+    left_click_commands:
+      - "[console] lp user %player_name% permission unset ssbkit.brokie"
+      - "[console] lp user %player_name% permission set ssbkit.select"
+      - "[message] &aKit reset! Money refunded."
+      - "[console] eco give %player_name% 0"
+      - "[close]"

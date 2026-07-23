@@ -1,0 +1,1120 @@
+# Citizens NPC Storage
+last-created-npc-id: 48
+npc:
+  '15':
+    metadata:
+      cached-skin-uuid: 4c984420-1577-4a46-893c-63a99b23ebf2
+      cached-skin-uuid-name: dealer
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: dm open dealer <player>
+          n: -1
+          hand: RIGHT
+          player: false
+      skintrait:
+        signature: VFvlSLQr8lIGpagKPv+TgYLmsq3PqL90txhQz3Pqdy6Ht5BE8etkdxWf66Ja/+N52uvS6EUs4V0rN9DF7wyttyOSVH/bQRB4HftUSw3LKt+s1teSMvnH/1B+dLtTxZGAsqJxj3yvoXLk2aUnblbJ+iSfkNtYojClasp4shFid3s5lzSCMPmlyv7Y+b4NPL1y0A8hZdDT7CZwEXO8Wl80OAlHepXybBnej+gyi8Cpt2gKLadUmBYf63tolrwegj6CQjRDl4y2gOgGFpPno+GQeBjWy1yXD25Tcp6dbWrAn3NBTnlGGnRB+3nFw6SA/HuUy1faVQAp0+DAkMAdjfZFzBVjJ4PR0kcjihNhwXHnKkcnyBOT8m5/ICnBl1jt+e1a49djQsFHBUHK8sUcLCTy+DAvsaQ41tnDMMlYCOHYmGODiHezeMSE7ko3EQFkZbQThpPWoDQOqxcm9mRT3t8hx8owXw9ZnKegaShaFIqkNFI2ZaLQm1bZVO4F1jForEYkTe6U/Uk8+eA5SiDNDHiIXFRvAjOG77JwDPg9UleoraTc/wbD9z9ZUEuzAnNwlt93gPZhL84WbvFSLoFjIWrijDjwHg6aTWOP1gOAu6d8s91ItJ19LzY4uNITeGqUB/Xm1kkeCs9QGUJvlussxVeNnx2k6TYPQF3pWr002+KA1M0=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MjYyMTU1MTg1MSwKICAicHJvZmlsZUlkIiA6ICI0Yzk4NDQyMDE1Nzc0YTQ2ODkzYzYzYTk5YjIzZWJmMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJEZWFsZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDEzNTM4NDM0YjY0OGM5MDI0Y2Q0MjNmNDEzZDg1ODIzYTQwOTgyYjIwYTAzOWU1NzZkZmIyM2EzZTJkZTViYiIKICAgIH0KICB9Cn0=
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.3472
+        y: -37.0
+        z: -275.4883
+        bodyYaw: -19.72261
+        pitch: 0.0
+        yaw: -19.7226
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Dealer
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: c0ea4ae5-1c72-48d1-9e95-2cc5b9751816
+  '16':
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: dm open pitboss <player>
+          n: -1
+          hand: RIGHT
+          player: false
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.3947
+        y: -37.0
+        z: -272.4704
+        bodyYaw: -30.063469
+        pitch: 0.0
+        yaw: -30.0635
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Pit Boss
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 2e0a3c61-773a-49e0-be8f-3386ba126666
+  '17':
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: dm open bjbrawler <player>
+          n: -1
+          hand: RIGHT
+          player: false
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.3009
+        y: -37.0
+        z: -269.5109
+        bodyYaw: -58.314583
+        pitch: 0.0
+        yaw: -58.3146
+      type: PLAYER
+      hologramtrait: {
+        }
+      skintrait:
+        signature: lRvn3uzTsgXh/piTY03Eh4Wa5A2jy0dApzzxKHG9xA/wvOlMQxStckSkcxQ4bRaB6LDKUQXDDyT1scAmkjvEIV08Qk0v95bJiQt3euNK8OuMk/+Md+RyQI5AXZDRgM7YAizYmDL8RJASIg4m86tbgtlesgw6ZjupUS92vn1eWJnfr9o+dUfnTA3aFwfSg0YkNiTBmRX3uU5ngjEV+nk3ZvtuPZY9m27c2hf48wFW7zJN/zJcQ0aBk/87z159sUB4zEtZsb5lWgmqDbf1pRYtz6oUW9tkbjRlhOHK70Ms0oXQrxCVIfIde5fbERzf92e2FW3NP+jKwpq22iecU4MwOs2Aah463NRxsUjr3w7GtuFfNZYeGOP+23qtThxIwIJ7aD1Jxmd+yF4z5iF2evoE8XncPaGUMJqIzMV97WKCUaiTYiqX/2O6c4JjjipCxqWVQxPWkKuluZzWzS7ELi4rKuq/pcsJpICHosdnm4HSONOaJfTsroM9QstFXAa7h27ao1A5XeUlgQ4Ij1Jm/06XbpqFKY7x12XCwPHww+162nbG1cUz+rDCQfLqCCFT/sAl3DxRvn/yQ2iBTkyPn8W4ONF7QE80Nv5r0d/7OLbaGN9HKpNTdd5+051tdU7X0qp5sxAQmIVbIOpY1P0WRaE/AI0oG27dayrTfGE8DYBLuUw=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MzExNDQ1ODEyNSwKICAicHJvZmlsZUlkIiA6ICI2MmZiY2NmNjVjMjA0YmY1YmViNjU1MGYxOTkxY2MxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJCbGFja2phY2siLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcwYTQ3YTMwNmY5ODIyYWIzNDRlZjhhYWU5Mjk3ZmU2ODlmN2VkYmE5YWU5OGNjYWVhMzIyMjU0MTQzNTZkNiIKICAgIH0KICB9Cn0=
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Blackjack
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 481fe32a-33c2-46ee-bc5f-9cfbe27071dd
+    metadata:
+      cached-skin-uuid: 62fbccf6-5c20-4bf5-beb6-550f1991cc13
+      cached-skin-uuid-name: blackjack
+  '18':
+    metadata:
+      cached-skin-uuid: 898550e4-3f02-4ee5-b2e8-cc36269de1df
+      cached-skin-uuid-name: wheelmaster
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: dm open croupier <player>
+          n: -1
+          hand: RIGHT
+          player: false
+      skintrait:
+        signature: W4klr1TTAPz1a2IOTD++CLNJBVr1EQ26fGZ5Nm31EUwHwJK6XgMquoPsS/Z4JBTPbi3dGQW54TwReQONMa2TjkVFyzkX084ki+F65DJ9HrrnV/TCK12PHTueWVognGTGxvWK+io7BZIZhA6jzJ7fxsYfxV8xPdVh9MonIR1NFvgVxgZCb0Oo6ze79Roxzuu3ouOMBRqiOshAqwOzfltDPWFK8Z21832X926h5j3SC+6857fe4IH49wf1WiRXiaLvIEX9YEmFstBkS6oYVQFmv0yoNqwHyOkgLoU/xmYURTjFYLHmQRpx4kueMCcgO26sxf2RGsHYmgDh6sZHMmeoV+I3uAz1UgFw6aDp9qTE0kWRHjlIN9Wf1YHJhsIisxNMBvjnY2kEQc0M6UH0lRMHAZWCH54RXlAotbKvXAV/YRthBNnclH1NQDkKEoR0MtmFhOn9vBQXt14WPeS/hXaWENXMhJ2YuVvzDdPRve24oPNnGLoH4DZ4ErGQGM0ipDQNhpBOsE6CY0+/HBtu58UEXRz7yobYB+4zFv+dnUTWM80quuXUZxG6XFCUNQQpOVVu1zBCCkMz12T6vDkPTghcUZlJt/y/R3Srbez9vCFjsEOoWwTkZ/CHiqCjaH/4ztt0xoSP3v2e2dj0/iFfJuZly9jl98j5fO2u89/RWKU4p38=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MzExNjQxMDk5OSwKICAicHJvZmlsZUlkIiA6ICI4OTg1NTBlNDNmMDI0ZWU1YjJlOGNjMzYyNjlkZTFkZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJXaGVlbG1hc3RlciIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iNjAwYjc4ZWYxMjY0MGQ3Njc3ZDNhMmZjN2NmMjE5NzdkYzM4M2YzODZjYzgyMzk1NjFmYWViOWRhOTQ0M2FlIgogICAgfQogIH0KfQ==
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.3
+        y: -37.0
+        z: -266.5208
+        bodyYaw: -114.046646
+        pitch: 0.0
+        yaw: -114.0466
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Wheelmaster
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: e195a474-0942-4aba-a817-887e0af52df5
+  '33':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -68.4915
+        y: 84.0
+        z: 236.3
+        bodyYaw: -170.36609
+        pitch: -5.3541
+        yaw: -170.3661
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 5042fe25-fe05-47c0-bc9d-2130a18ee50b
+  '29':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -105.303
+        y: 78.0
+        z: 246.5031
+        bodyYaw: -83.43609
+        pitch: -0.5549
+        yaw: -83.4361
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 9276ac39-51b4-4862-894a-813155f6fe0d
+  '25':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -97.5162
+        y: 77.0
+        z: 206.7
+        bodyYaw: -110.55598
+        pitch: -8.4284
+        yaw: -110.556
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: a4869f85-7c63-443d-8388-7bfecd3ef356
+  '37':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -72.3
+        y: 84.0
+        z: 217.5152
+        bodyYaw: 49.3071
+        pitch: 12.4352
+        yaw: 49.3071
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: d14be452-58d6-443b-9d1e-478092866fcb
+  '30':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -96.6979
+        y: 78.0
+        z: 246.4809
+        bodyYaw: 70.893234
+        pitch: -1.5421
+        yaw: 70.8932
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 5703ea5c-cbd9-4b73-879e-5bb734c386de
+  '28':
+    metadata:
+      cached-skin-uuid: f791f85d-4496-4b6e-a13f-9c12878504e9
+      cached-skin-uuid-name: bartender
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      skintrait:
+        signature: jAr+14qdpBkPO3wJUm66jgb01YWqYqlwPS5MdigPPmlanqwS9Sr2+GC1czg0rSHhDt3tEn/OMhIZEhKAlnyjbZbnKFLzYXEhuXMyylcVrpX1ckF5C1yzE58aQ/HFaUFljIyDkO0A26dDFU4otyAS2hALO3yjd0yHtgLDW9C24GgmZUEnKXdsQ6yIHmCuB1qTiAW3KwPsfuR6utm1zpaacRQ2x42Nmgd6Bp1uplO7kbSWzyPd0zIdjYWm4T7LCija0yoRlCv98YkjcZR0H/HBcTSC4m2F7rVBJjC/94y+XdwIctZfj0UcbLSaZNH8Ho49U0P4yPVsl0XQebmeLZqJBdVW8dLrGz7RFOIb93fykUG8oHDN31XfASgdeQfKrmCBvnTKhgib2HzrTC8KSVVh9oa9J7itO8Kq7IXSWRwta0eN/ia0blKZvotz7iLdGsZoQIuavIUmvyfzecDGivAlB6EDcSgIYZ9D4BydI3lEZmfwkr8TDo7wrYjqbEnuQysgG3MjZN0burt36FHYmzsI4Jm7ZeIA70BKyMIgHg+Kz5I3emNYgDnL0M8umFe+bCmELokUs8SF475trDlF0osyFofmoBw3phvud3MdWXU9Z7pr3I45RJzhiWZJY59pQzS+mAxUfkqTtq9wBKdVyfKxdQzLBpfb6TN+6a32i96T9nw=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MjY4MzI4MzcyNywKICAicHJvZmlsZUlkIiA6ICJmNzkxZjg1ZDQ0OTY0YjZlYTEzZjljMTI4Nzg1MDRlOSIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYXJ0ZW5kZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI1YjQwZGFhZWRjYzRlNWY0NmI3Njc3NWJjYjkzYTA0MjJjNmM1YzQyOTdkNWQxZTAwZjc5OWEwYjA4YTJiMiIKICAgIH0KICB9Cn0=
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -119.4875
+        y: 78.0
+        z: 230.6171
+        bodyYaw: -55.76511
+        pitch: -7.2477
+        yaw: -55.7651
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&b&lBartender'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: bab7111e-365d-4fb7-996e-9045c1fcb459
+  '24':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -102.5346
+        y: 77.0
+        z: 206.7
+        bodyYaw: -100.937515
+        pitch: -5.2401
+        yaw: -100.9375
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 90b86903-6295-47e4-874f-df27c8127a80
+  '26':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -103.4452
+        y: 78.0
+        z: 196.664
+        bodyYaw: -60.049957
+        pitch: -6.5091
+        yaw: -60.05
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&6&lCasino Clerk'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 2612fa6a-c0d3-4edd-a798-fdc068d2e87e
+  '23':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -107.4965
+        y: 77.0
+        z: 206.7
+        bodyYaw: -18.787277
+        pitch: -5.9757
+        yaw: -18.7873
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: c0f110d3-af35-4cab-9ec7-3e916029c5c0
+  '22':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -81.7
+        y: 77.0
+        z: 209.5199
+        bodyYaw: 121.7126
+        pitch: -5.6124
+        yaw: 111.6454
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 2cf7239d-6064-412e-a95d-f534d341de2a
+  '35':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -72.3
+        y: 84.0
+        z: 227.5229
+        bodyYaw: -161.33702
+        pitch: -9.1302
+        yaw: -161.337
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 7275b357-f4be-414c-ab75-a99b34b4b6a0
+  '39':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -200.7
+        y: 74.0
+        z: 61.4595
+        bodyYaw: 56.0907
+        pitch: -8.4251
+        yaw: 56.0907
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&d&lGas Station Cashier'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 4e499ae7-5b0a-448c-bcda-a859906d258b
+  '27':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -78.4123
+        y: 78.0
+        z: 196.7
+        bodyYaw: 68.82785
+        pitch: -1.3129
+        yaw: 68.8279
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&6&lCasino Clerk'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: f466ae6f-a926-48dd-9f2d-5df3ed2db109
+  '31':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -92.3
+        y: 78.0
+        z: 246.5115
+        bodyYaw: 83.68617
+        pitch: -0.54
+        yaw: 83.6862
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 6b4c7500-6a2b-49b9-ae8c-a1694f620fab
+  '32':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -85.6961
+        y: 78.0
+        z: 246.4772
+        bodyYaw: 112.95682
+        pitch: -14.0447
+        yaw: 117.5293
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: db2cc135-67f9-4310-a2ae-843d1f72d946
+  '34':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -72.3
+        y: 84.0
+        z: 233.5051
+        bodyYaw: -151.35347
+        pitch: -5.933
+        yaw: -151.3535
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lBlackjack Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: f85f4858-c145-4dc7-8124-f3ae4390e350
+  '38':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -62.5125
+        y: 84.0
+        z: 226.3776
+        bodyYaw: 135.8787
+        pitch: -5.0767
+        yaw: 150.0568
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&b&lHigh Roller Bartender'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 24f43390-e74f-48b1-82d9-0c2d225b9aa5
+  '36':
+    traits:
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 14fd5677-36e0-41c9-9e89-4a9e84e5f39f
+        x: -72.3001
+        y: 84.0
+        z: 222.511
+        bodyYaw: 55.48546
+        pitch: 11.6942
+        yaw: 55.4855
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: scoreboardtrait,owner,spawned,rotationtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&2&lPoker Dealer'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 89b0a427-d818-460b-8e40-6416c8fd85bf
+  '44':
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: c6d26594-3114-48b2-967d-fd185e0a02e6
+        x: -57.4854
+        y: 63.0
+        z: 71.5486
+        bodyYaw: -15.544357
+        pitch: 0.0
+        yaw: -15.5444
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,hologramtrait,skintrait,lookclose,location,inventory,type,chunktickettrait
+    name: '&cSmash (Duo)'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 5a9ccf1c-3129-4bf9-b7da-3ab9ca4dff33
+  '43':
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: c6d26594-3114-48b2-967d-fd185e0a02e6
+        x: -60.5169
+        y: 63.0
+        z: 74.4564
+        bodyYaw: -59.15664
+        pitch: 0.0
+        yaw: -59.1566
+      type: PLAYER
+      hologramtrait: {
+        }
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: mvtp <player> e:ssb:70.5,-37,-289.5
+          n: -1
+          hand: RIGHT
+          player: false
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: ssbqueue
+          n: -1
+          hand: RIGHT
+          player: true
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,hologramtrait,skintrait,lookclose,location,inventory,type,chunktickettrait
+    name: '&aSmash (Solo)'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 1eaa8acc-d078-4ab6-8668-e4e7682b84f1
+  '45':
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: smash join Quadro
+          n: -1
+          hand: RIGHT
+          player: true
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.3
+        y: -37.0
+        z: -263.5025
+        bodyYaw: -146.65065
+        pitch: 0.0
+        yaw: -146.6507
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&b&lPlay again!'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 2ac2c2a3-ff44-4962-96b7-d8a2221c1b8f
+  '20':
+    metadata:
+      cached-skin-uuid: e41f49a4-ca0f-4c86-9d72-652e1016b8de
+      cached-skin-uuid-name: exit
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: smash leave
+          n: -1
+          hand: RIGHT
+          player: true
+      skintrait:
+        signature: PtiyDTN0Ninun2VXCPJtFHocuozmUFDciZEUPf8qrMOshJ9GYDvQBSBvJ1H36f2ladl8t3Uw4PUSV3afZCqKno+USgQd2G/iPB/6Aoi4dBJKmbuMy5QwXkbtqzUihdrhncgMIbQJKKmzryaQ090F3QxTMx+2sh1wK2l+hBKZd+m0UqVzOsP+cn+l0Cr5dVssJP2vxoLlRuqInDuKxXDgyXMl1Q4bzB9U1CDxqwvSFbAclsMecQB2kX5XUH+HiZChWGRKgcXbrOFZ9IEXbSWAEIium36IB+kBLjBvl/WtrUVv2Oc7pB0am62cf+d0glRJJ2ltTXZsPHkT5j3w7FZp313tdTqsPfjPlITiUEqOTzKoqzNJUiSifDTw5Xwd80jsKiKViC6rHGTrRhA2RR1qHb9JB5VCkoL+TuLBMCBBuSYktr4ZEAkyOywn/WWgbES8vAGpFz4qLq6+hTL2HHkIGzPKMU08clCH2DRzL+gvUR6OAg0KBQwTA5YglkxfuYDWdifysgvO/Sx8WsaVMY5DjUdPKYpEnhoB5UTihQc7vYM9BnClxUqJEQFUh2YK4dqM1oFrfAXu4ln93SFz0auds1ULesGTD6QgzeZ0kO5bYUOWN2GIWsz3kH99Cv2GOkHB3Er9pG+Bwf0VfpkWe6UiVuJTAla3aitWmabxkGnP5EY=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MjYyMzg0MDQzMSwKICAicHJvZmlsZUlkIiA6ICJlNDFmNDlhNGNhMGY0Yzg2OWQ3MjY1MmUxMDE2YjhkZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJFeGl0IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdlZmUyNjJiYjIzNGE5NjRlNzczZmRmMWY3OGM1ODM5OWNjOTAyMWQxNjAwYjJhNmI2Zjg0MWZkZmVlZmQ1ZTQiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.5
+        y: -37.0
+        z: -260.5
+        bodyYaw: -160.25021
+        pitch: 0.0
+        yaw: -160.2502
+      type: PLAYER
+      hologramtrait: {
+        }
+    traitnames: owner,scoreboardtrait,spawned,rotationtrait,commandtrait,hologramtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: '&c&lExit'
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 60ff8c6b-de21-43be-a135-8bd41293ead0
+  '47':
+    metadata:
+      cached-skin-uuid: 8fa1bf0f-9b4e-42a4-9433-14094f365ebf
+      cached-skin-uuid-name: hustler
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      skintrait:
+        signature: W5qjHKf337Dw1CAXKL4NBVzytmFz9QCfQ1IOZOpEtHUt2LGwLJWIt+Mzw/0a+fHG6Z/rksgj6qkglwnDac4X5jwcn547IUocDcJpNSSPxBrx+ZaTX/aMX8FD++19GVCQLDXyMqZHhYIap7MCLegcvR1T1ii7bXr5qe9xpWIxDlNGcNYa91bjrRdkF+qH81W0gtnIeqT+rEfK1wdU6lgc9WFYCjHzY0dzsTK3B3sXn1eDLkmKg3UFPnQc/X9dja8iiSYSKzLNWB0GttTN63xRtdQ6ANT07tCWLPZC5+w0ezbsbhCj2oFw2+uT4UMNmDC1ZXNIMkxAR5yUOjbO236kD6t2WIyJLWOkwpaOhWvOI9TxXkxQIvZ2zYTpPvYIdU9XWJmLxgRrrBUgWXHPPv2R9QF1ek6LSOVKXzbnmZkF6poX0H1lHpKeIZD/j9Ulw7nkYGeXKh12IjJYmM7529k2ckU+AI1+4BTW39s0CQFRvZgx+rNRYR37NUyFtcqcBw+u1jdw87IOlpU3NrBWRf1TYFgXR49AuoGeMJ98nOVUZlIlGtOhSLZ5Qqmdd5JHny8pxqkiSe3uAwHHdLmMzwvrghe7hELC0zT3uc8oFvqjVCvt0Ha4UdN4ek1+hpD5g2qnYRT1TUHHHn66wtFJRGcgmlRGbnnHtWzQCcZG1hl6FHk=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MzExMzkxNDMzMiwKICAicHJvZmlsZUlkIiA6ICI4ZmExYmYwZjliNGU0MmE0OTQzMzE0MDk0ZjM2NWViZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJIdXN0bGVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U4MTNiOGQyODBlYTA1NmE0NzI4ZjlhN2M3Zjc1N2RkNDJmNjg1NDRkMzJlMjNjOGJlNWIwODEyNWViNTk1ZDEiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lN2RmZWExNmRjODNjOTdkZjAxYTEyZmFiYmQxMjE2MzU5YzBjZDBlYTQyZjk5OTliNmU5N2M1ODQ5NjNlOTgwIgogICAgfQogIH0KfQ==
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.4248
+        y: -37.0
+        z: -281.5001
+        bodyYaw: -13.937706
+        pitch: -6.8033
+        yaw: -13.9377
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Hustler
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: 83ad1f47-3a70-4176-b3e9-46ab74447e16
+  '48':
+    metadata:
+      cached-skin-uuid: a0de9e28-a1b3-4844-a69c-4af0a407fad6
+      cached-skin-uuid-name: bankrupt
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: -1
+          cooldown: 0
+          command: dm open brokie <player>
+          n: -1
+          hand: RIGHT
+          player: true
+      skintrait:
+        signature: XEF7I4ToPSXw2iqkcMGnBc96Z8g3FowMXXgihzohqM2tXjlYQiW1y4/ZpwbMg/zwpHHlJeaqPAtJeHGzrPqBRCVB4Se7ptxyaMbqxDJFYXIWrCd4lt9skJUMoRhfrtjTte9lUvUMT9DYxKUqJbZ+HdljJX3+u6beaBaZ32d9uGjnXYekZt5/sRzPIstMGrAS1IA/0L1lEKH5lumPHR3WxKRyCss1eDK3vIGLbr2rfltZ4CJ57JfsA8APHpZodfM+rPvixQsgYskXuCu7pGtouKoPxcVE/G7TNIG6APHM7bU/B+VToePxVm8fDAWsjU3coY21eiuRnt6Q7QZyIs4Q0LTCHKi6UFXQBRVrmQhMv2Sc3sQdV7Gj8yoTg4Hlq0i+AD+dHusPEk5qinkiM0Zle83T9NyHo3IDgy2wFfdlmk6H8gc+s+qk7AVBI3/+5hXMAtQusJnMpC9JwZOXcQ8Zs1dwIhShmaiibMCFk6srfCU7FSHUIhIKAzvJOz66ShJ4FBXdMIyKx05xI9HgYDDb5TBEHN71MkmwfJRAwaP1zdGYRLlQACiy4OeKN5vGQMeyYu7nfbkJVhG8XS5ZGIl+r2Z4tqYeGboxJlC5AHwXpueO/zosn3lG35Txcb5L29xubOQc5oNlIUQaF8GXVhPAUIFhlfHlj4ceva3qP3T/9Lw=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MzExMzc4NDg4NSwKICAicHJvZmlsZUlkIiA6ICJhMGRlOWUyOGExYjM0ODQ0YTY5YzRhZjBhNDA3ZmFkNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYW5rcnVwdCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mZWNlNzAxN2IxYmIxMzkyNmQxMTU4ODY0YjI4M2I4YjkzMDI3MWY4MGE5MDQ4MmYxNzRjY2E2YTE3ZTg4MjM2IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.4245
+        y: -37.0
+        z: -284.5169
+        bodyYaw: -15.482407
+        pitch: -11.702
+        yaw: -15.4824
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,commandtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Bankrupt
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: cc107d78-de41-4fd0-92b4-9365965a8ce0
+  '46':
+    metadata:
+      cached-skin-uuid: b42251b8-5d4f-43ce-8c3d-a697c37c0087
+      cached-skin-uuid-name: baller
+    traits:
+      owner:
+        uuid: 769d441a-1661-4e15-8313-7dad7f3e8c79
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+      skintrait:
+        signature: AOqOIb8N1k/eNRaaHzzqWiPwuMA2vGI88ZQPA+f/bmo4ss12B4Lltzb4gBTznbAOp9gzurHxac01+6sUHgVce6K0ZORU2rVuCf9uxIQeZEfAskXd1u5g0h0OTu5gCe18LVW6+0AoshwaeEIV0XDkw1EbqzJ5siFnHXPPM1QbN896ARN6GdJXxvs1QSYJwBwp2IrRaWwZNTbAZxm4U1hyJfLS0selJDLWFkdrQnv918qI4DMwkvrMUEFhw4YXMeYl4+jFzVaUvQs3XMzYRDNmONuH6HCjJOHq8RvEntXja4enDhuxOcnskGpB41ymkPRg6INUEdW4fXx5Obh3tNT1Er497F8mtZd+sKJikNXJX5Tx94kmCPS5jwJelUvNwquXCX9gQh1EtPr98kvPX9qe8pSnyewJvYhxaF1MqhRVXkraGug/IkSOBJOqzT/ib3EPa4/TWM5MEgaDLKuT194asmifW7LsE91P068d74gjFZmvS2YmpZ2WMn5uPrSvgQrL7dZpXjzSyr9gURYLz9JCzqvLwXdc5vmN5EMq/RbQ/HzZJvxPGC39vkbKPbUtdwGx+4PdMZCsUAAFHa+XNmrLaG5oelclKtBlQT3PXMJkRH9iuOCZcjjSnSN3dRaP2D8ZFBVhOmQCPUoqmZ2zV+QVh2N3IbKzVXFeoH5/4AhkWT4=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTc4MzExMzg5NjgyOCwKICAicHJvZmlsZUlkIiA6ICJiNDIyNTFiODVkNGY0M2NlOGMzZGE2OTdjMzdjMDA4NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJiYWxsZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY0YzIxMWRjOThmOGEzNjUzODMyMWZjMmFmMjg2Y2RlYjAyYTczOTY2MmZlNmQyNDJlYmY2NjM5M2IyZWQwYSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0MGMwZTAzZGQyNGExMWIxNWE4YjMzYzJhN2U5ZTMyYWJiMjA1MWIyNDgxZDBiYTdkZWZkNjM1Y2E3YTkzMyIKICAgIH0KICB9Cn0=
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        worldid: 3133c9c5-e473-4dde-8092-4bd4576c4a58
+        x: 67.4254
+        y: -37.0
+        z: -278.5029
+        bodyYaw: -17.185913
+        pitch: -8.3274
+        yaw: -17.1859
+      type: PLAYER
+    traitnames: spawned,owner,scoreboardtrait,rotationtrait,skintrait,lookclose,location,type,inventory,chunktickettrait
+    name: Baller
+    navigator:
+      usedefaultstuckaction: false
+      speedmodifier: 1.0
+      avoidwater: false
+    uuid: a3a30bab-e947-4cc5-8cd6-635ead3f8b35

@@ -1,0 +1,78 @@
+on damage of living entity:
+    attacker is player
+
+    set {_p} to attacker
+    set {_t} to victim
+    set {_id} to uuid of {_p}
+
+    # =========================
+    # ITEM CHECK (EI WEAPON GATE)
+    # =========================
+    if attacker's tool is not stick:
+        stop
+
+    if name of attacker's tool is not "&eDefault name":
+        stop
+
+    # =========================
+    # MISS / SKILL BRIDGE
+    # =========================
+    if {bj.lasthit::%{_id}%} is set:
+        if difference between now and {bj.lasthit::%{_id}%} > 2 seconds:
+
+            remove 2 from {bj.combo::%{_id}%}
+
+            if {bj.combo::%{_id}%} < 0:
+                set {bj.combo::%{_id}%} to 0
+
+    # update last hit time
+    set {bj.lasthit::%{_id}%} to now
+
+    # =========================
+    # COMBO INCREASE
+    # =========================
+    add 1 to {bj.combo::%{_id}%}
+
+    if {bj.combo::%{_id}%} > 21:
+        set {bj.combo::%{_id}%} to 21
+
+    set {_combo} to {bj.combo::%{_id}%}
+
+    # =========================
+    # HUD
+    # =========================
+    send action bar "&6BLACKJACK: &e%{_combo}%&7/21" to {_p}
+
+    # =========================
+    # DAMAGE SCALING
+    # =========================
+    if {_combo} >= 6:
+        damage {_t} by 1
+
+    if {_combo} >= 11:
+        damage {_t} by 1
+
+    if {_combo} >= 16:
+        damage {_t} by 2
+        push {_t} away from {_p} at speed 1.2
+
+    # =========================
+    # JACKPOT (21)
+    # =========================
+    if {_combo} = 21:
+
+        send action bar "&c&lBLACKJACK JACKPOT!" to {_p}
+
+        play sound "entity.generic.explode" at {_p}
+        play sound "ui.toast.challenge_complete" at {_p}
+        play sound "block.note_block.bell" at {_p}
+
+        damage {_t} by 6
+        push {_t} away from {_p} at speed 8
+
+        make 20 crit at location of {_t}
+        make 10 explosion at location of {_t}
+        make 10 smoke at location of {_t}
+        make 8 flame at location of {_t}
+
+        set {bj.combo::%{_id}%} to 0

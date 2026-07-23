@@ -1,0 +1,488 @@
+menu_title: "&8Armorer"
+open_command: armorer
+size: 54
+
+items:
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: " "
+    slots:
+      - 0-54
+
+  # =========================
+  # Chain Armor
+  # =========================
+  chainhelm_buy:
+    material: CHAINMAIL_HELMET
+    slot: 11
+    display_name: "&fChainmail Helmet"
+    lore:
+      - "&aPrice: $200"
+      - "&7Left-click to purchase for $200"
+      - "&7Right-click to sell for $100"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 200
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $200."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 200"
+      - "[console] give %player_name% chainmail_helmet 1"
+      - "[message] &aPurchase successful! &fChainmail Helmet acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: CHAINMAIL_HELMET
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Chainmail Helmet to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% chainmail_helmet 1"
+      - "[console] eco give %player_name% 100"
+      - "[message] &aSold Chainmail Helmet for &e$100&a!"
+      
+  chainchest_buy:
+    material: CHAINMAIL_CHESTPLATE
+    slot: 20
+    display_name: "&fChainmail Chestplate"
+    lore:
+      - "&aPrice: $200"
+      - "&7Left-click to purchase for $200"
+      - "&7Right-click to sell for $100"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 200
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $200."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 200"
+      - "[console] give %player_name% chainmail_chestplate 1"
+      - "[message] &aPurchase successful! &fChainmail Chestplate acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: CHAINMAIL_CHESTPLATE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Chainmail Chestplate to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% chainmail_chestplate 1"
+      - "[console] eco give %player_name% 200"
+      - "[message] &aSold Chainmail Chestplate for &e$200&a!"
+      
+  chainleg_buy:
+    material: CHAINMAIL_LEGGINGS
+    slot: 29
+    display_name: "&fChainmail Leggings"
+    lore:
+      - "&aPrice: $200"
+      - "&7Left-click to purchase for $200"
+      - "&7Right-click to sell for $100"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 200
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $200."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 200"
+      - "[console] give %player_name% chainmail_leggings 1"
+      - "[message] &aPurchase successful! &fChainmail Leggings acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: CHAINMAIL_LEGGINGS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Chainmail Leggings to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% chainmail_leggings 1"
+      - "[console] eco give %player_name% 100"
+      - "[message] &aSold Chainmail Leggings for &e$100&a!"
+      
+  chainboots_buy:
+    material: CHAINMAIL_BOOTS
+    slot: 38
+    display_name: "&fChainmail Boots"
+    lore:
+      - "&aPrice: $200"
+      - "&7Left-click to purchase for $200"
+      - "&7Right-click to sell for $100"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 200
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $200."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 100"
+      - "[console] give %player_name% chainmail_boots 1"
+      - "[message] &aPurchase successful! &fChainmail Boots acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: CHAINMAIL_BOOTS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Chainmail Boots to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% chainmail_boots 1"
+      - "[console] eco give %player_name% 100"
+      - "[message] &aSold Chainmail Boots for &e$100&a!"
+      
+  # =========================
+  # Iron Armor
+  # =========================
+  ironhelm_buy:
+    material: IRON_HELMET
+    slot: 13
+    display_name: "&fIron Helmet"
+    lore:
+      - "&aPrice: $300"
+      - "&7Left-click to purchase for $300"
+      - "&7Right-click to sell for $150"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 300
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $300."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 300"
+      - "[console] give %player_name% iron_helmet 1"
+      - "[message] &aPurchase successful! &fIron Helmet acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_HELMET
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have an Iron Helmet to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_helmet 1"
+      - "[console] eco give %player_name% 150"
+      - "[message] &aSold Iron Helmet for &e$150&a!"
+      
+  ironchest_buy:
+    material: IRON_CHESTPLATE
+    slot: 22
+    display_name: "&Iron Chestplate"
+    lore:
+      - "&aPrice: $900"
+      - "&7Left-click to purchase for $900"
+      - "&7Right-click to sell for $450"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 900
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $900."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 900"
+      - "[console] give %player_name% iron_chestplate 1"
+      - "[message] &aPurchase successful! &fIron Chestplate acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_CHESTPLATE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have an Iron Chestplate to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_chestplate 1"
+      - "[console] eco give %player_name% 450"
+      - "[message] &aSold Iron Chestplate for &e$450&a!"
+      
+  ironleg_buy:
+    material: IRON_LEGGINGS
+    slot: 31
+    display_name: "&fIron Leggings"
+    lore:
+      - "&aPrice: $800"
+      - "&7Left-click to purchase for $800"
+      - "&7Right-click to sell for $400"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 800
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $800."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 800"
+      - "[console] give %player_name% iron_leggings 1"
+      - "[message] &aPurchase successful! &fIron Leggings acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_LEGGINGS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Iron Leggings to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_leggings 1"
+      - "[console] eco give %player_name% 400"
+      - "[message] &aSold Iron Leggings for &e$400&a!"
+      
+  ironboots_buy:
+    material: IRON_BOOTS
+    slot: 40
+    display_name: "&fIron Boots"
+    lore:
+      - "&aPrice: $400"
+      - "&7Left-click to purchase for $400"
+      - "&7Right-click to sell for $200"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 400
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $400."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 400"
+      - "[console] give %player_name% iron_boots 1"
+      - "[message] &aPurchase successful! &fIron Boots acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: IRON_BOOTS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Iron Boots to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% iron_boots 1"
+      - "[console] eco give %player_name% 200"
+      - "[message] &aSold Iron Boots for &e$200&a!"
+      
+  # =========================
+  # Diamond Armor
+  # =========================
+  diamondhelm_buy:
+    material: DIAMOND_HELMET
+    slot: 15
+    display_name: "&fDiamond Helmet"
+    lore:
+      - "&aPrice: $5,000"
+      - "&7Left-click to purchase for $5,000"
+      - "&7Right-click to sell for $2,500"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 5000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $5,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 5000"
+      - "[console] give %player_name% diamond_helmet 1"
+      - "[message] &aPurchase successful! &fDiamond Helmet acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND_HELMET
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Diamond Helmet to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% diamond_helmet 1"
+      - "[console] eco give %player_name% 2500"
+      - "[message] &aSold Diamond Helmet for &e$2,500&a!"
+      
+  diamondchest_buy:
+    material: DIAMOND_CHESTPLATE
+    slot: 24
+    display_name: "&fDiamond Chestplate"
+    lore:
+      - "&aPrice: $12,000"
+      - "&7Left-click to purchase for $12,000"
+      - "&7Right-click to sell for $6,000"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 12000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $12,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 12000"
+      - "[console] give %player_name% diamond_chestplate 1"
+      - "[message] &aPurchase successful! &fDiamond Chestplate acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND_CHESTPLATE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Diamond Chestplate to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% diamond_chestplate 1"
+      - "[console] eco give %player_name% 6000"
+      - "[message] &aSold Diamond Chestplate for &e$6,000&a!"
+      
+  diamondleg_buy:
+    material: DIAMOND_LEGGINGS
+    slot: 33
+    display_name: "&fDiamond Leggings"
+    lore:
+      - "&aPrice: $10,000"
+      - "&7Left-click to purchase for $10,000"
+      - "&7Right-click to sell for $5,000"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 10000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $10,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 10000"
+      - "[console] give %player_name% diamond_leggings 1"
+      - "[message] &aPurchase successful! &fDiamond Leggings acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND_LEGGINGS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Diamond Leggings to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% diamond_leggings 1"
+      - "[console] eco give %player_name% 5000"
+      - "[message] &aSold Diamond Leggings for &e$5,000&a!"
+      
+  diamondboots_buy:
+    material: DIAMOND_BOOTS
+    slot: 42
+    display_name: "&fDiamond Boots"
+    lore:
+      - "&aPrice: $6,000"
+      - "&7Left-click to purchase for $6,000"
+      - "&7Right-click to sell for $3,000"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 6000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $6,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 6000"
+      - "[console] give %player_name% diamond_boots 1"
+      - "[message] &aPurchase successful! &fDiamond Boots acquired."
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: DIAMOND_BOOTS
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Diamond Boots to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% diamond_boots 1"
+      - "[console] eco give %player_name% 3000"
+      - "[message] &aSold Diamond Boots for &e$3,000&a!"

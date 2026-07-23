@@ -1,0 +1,163 @@
+options:
+    min-players: 1
+    countdown: 11
+    world: ssb
+
+# =====================================================
+# QUEUE + MATCH STATES
+# =====================================================
+
+# {ssb.queue::*}
+# {ssb.match::*}
+# {ssb.running}
+
+# =====================================================
+# SPAWNS (FIXED FORMAT)
+# =====================================================
+
+set {ssb.spawn.one} to location at -163.5, 106, 155.5 in world "{@world}"
+set {ssb.spawn.two} to location at -150.5, 106, 140.5 in world "{@world}"
+set {ssb.spawn.three} to location at -163.5, 106, 125.5 in world "{@world}"
+
+set {ssb.hub} to location at 0.5, 100, 0.5 in world "world"
+
+# =====================================================
+# JOIN QUEUE
+# =====================================================
+
+command /ssbqueue:
+    trigger:
+
+        if player is in {ssb.queue::*}:
+            remove player from {ssb.queue::*}
+            send "&cYou left Smash queue." to player
+            stop
+
+        add player to {ssb.queue::*}
+
+        send "&aJoined Smash! (%size of {ssb.queue::*}%/%{@min-players}%)" to player
+
+        if size of {ssb.queue::*} >= {@min-players}:
+            if {ssb.running} is not set:
+                set {ssb.running} to true
+                start_ssb_countdown()
+
+# =====================================================
+# COUNTDOWN
+# =====================================================
+
+function start_ssb_countdown():
+
+    set {ssb.time} to {@countdown}
+
+    while {ssb.time} > 0:
+
+        if size of {ssb.queue::*} < {@min-players}:
+            broadcast "&cSmash cancelled."
+            delete {ssb.queue::*}
+            delete {ssb.running}
+            delete {ssb.time}
+            stop
+
+        send action bar "&eStarting in %{ssb.time}%s..." to {ssb.queue::*}
+
+        wait 1 second
+        remove 1 from {ssb.time}
+
+    start_ssb_match()
+
+# =====================================================
+# MATCH START
+# =====================================================
+
+function start_ssb_match():
+
+    broadcast "&aSmash Started!"
+
+    set {ssb.match::*} to {ssb.queue::*}
+    delete {ssb.queue::*}
+
+    loop {ssb.match::*}:
+
+        set {_r} to random integer between 1 and 3
+
+        if {_r} is 1:
+            teleport loop-value to {ssb.spawn.one}
+
+        if {_r} is 2:
+            teleport loop-value to {ssb.spawn.two}
+
+        if {_r} is 3:
+            teleport loop-value to {ssb.spawn.three}
+
+        play sound "ui.toast.challenge_complete" with volume 1 and pitch 1 to loop-value
+        send "&aFight!" to loop-value
+
+    delete {ssb.running}
+    delete {ssb.time}
+
+# =====================================================
+# DEATH HANDLING
+# =====================================================
+
+on death:
+    victim is a player
+
+    if {ssb.running} is true:
+        if victim is in {ssb.match::*}:
+
+            remove victim from {ssb.match::*}
+
+            wait 1 tick
+            teleport victim to {ssb.hub}
+
+            send "&cEliminated!" to victim
+
+            check_ssb_end()
+
+# =====================================================
+# MATCH END CHECK
+# =====================================================
+
+function check_ssb_end():
+
+    if size of {ssb.match::*} <= 1:
+
+        set {_winner} to first element of {ssb.match::*}
+
+        if {_winner} is set:
+            broadcast "&6%{_winner}% wins Smash!"
+            send "&aYou won!" to {_winner}
+            teleport {_winner} to {ssb.hub}
+
+        loop all players in world "{@world}":
+            teleport loop-value to {ssb.hub}
+
+        delete {ssb.match::*}
+        delete {ssb.queue::*}
+        delete {ssb.running}
+        delete {ssb.time}
+
+# =====================================================
+# LEAVE COMMAND
+# =====================================================
+
+command /ssbleave:
+    trigger:
+
+        remove player from {ssb.queue::*}
+        remove player from {ssb.match::*}
+
+        teleport player to {ssb.hub}
+        send "&7Returned to hub." to player
+
+        check_ssb_end()
+
+# =====================================================
+# QUIT SAFETY
+# =====================================================
+
+on quit:
+    remove player from {ssb.queue::*}
+    remove player from {ssb.match::*}
+    check_ssb_end()

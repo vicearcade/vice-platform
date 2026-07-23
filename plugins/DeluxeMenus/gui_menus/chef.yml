@@ -1,0 +1,221 @@
+menu_title: "&8Chef"
+open_command: chef
+size: 27
+
+items:
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    display_name: " "
+    slots:
+      - 0-27
+
+  # =========================
+  # COOKED STEAK (32)
+  # =========================
+  steak_buy:
+    material: COOKED_BEEF
+    slot: 11
+    display_name: "&fCooked Steak (32)"
+    lore:
+      - "&aPrice: $75"
+      - "&7Left-click to purchase for $75"
+      - "&7Right-click to sell for $40"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 75
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $75."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 75"
+      - "[console] give %player_name% cooked_beef 32"
+      - "[message] &aPurchased 32 Cooked Steak!"
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: COOKED_BEEF
+          amount: 32
+
+      deny_commands:
+        - "[message] &cYou don't have enough steak to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% cooked_beef 32"
+      - "[console] eco give %player_name% 40"
+      - "[message] &aSold 32 Cooked Steak for &e$40&a!"
+
+  # =========================
+  # BREAD (32)
+  # =========================
+  bread_buy:
+    material: BREAD
+    slot: 12
+    display_name: "&fBread (32)"
+    lore:
+      - "&aPrice: $40"
+      - "&7Left-click to purchase for $40"
+      - "&7Right-click to sell for $20"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 40
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $40."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 40"
+      - "[console] give %player_name% bread 32"
+      - "[message] &aPurchased 32 Bread!"
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: BREAD
+          amount: 32
+
+      deny_commands:
+        - "[message] &cYou don't have enough bread to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% bread 32"
+      - "[console] eco give %player_name% 20"
+      - "[message] &aSold 32 Bread for &e$20&a!"
+
+  # =========================
+  # GOLDEN APPLE
+  # =========================
+  golden_apple_buy:
+    material: GOLDEN_APPLE
+    slot: 13
+    display_name: "&6Golden Apple"
+    lore:
+      - "&aPrice: $1,500"
+      - "&7Left-click to purchase for $1,500"
+      - "&7Right-click to sell for $750"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 1500
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $1,500."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 1500"
+      - "[console] give %player_name% golden_apple 1"
+      - "[message] &aPurchased Golden Apple!"
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: GOLDEN_APPLE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a Golden Apple to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% golden_apple 1"
+      - "[console] eco give %player_name% 750"
+      - "[message] &aSold Golden Apple for &e$750&a!"
+
+  # =========================
+  # ENCHANTED GOLDEN APPLE
+  # =========================
+  god_apple_buy:
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 14
+    display_name: "&dEnchanted Golden Apple"
+    lore:
+      - "&aPrice: $10,000"
+      - "&7Left-click to purchase for $10,000"
+      - "&7Right-click to sell for $5,000"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 10000
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $10,000."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 10000"
+      - "[console] give %player_name% enchanted_golden_apple 1"
+      - "[message] &aPurchased God Apple!"
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: ENCHANTED_GOLDEN_APPLE
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have a God Apple to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% enchanted_golden_apple 1"
+      - "[console] eco give %player_name% 5000"
+      - "[message] &aSold God Apple for &e$5,000&a!"
+
+  # =========================
+  # RABBIT STEW
+  # =========================
+  rabbit_stew_buy:
+    material: RABBIT_STEW
+    slot: 15
+    display_name: "&fRabbit Stew"
+    lore:
+      - "&aPrice: $300"
+      - "&7Left-click to purchase for $300"
+      - "&7Right-click to sell for $100"
+
+    left_click_requirement:
+      requirements:
+        money_check:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: 300
+
+      deny_commands:
+        - "[message] &cYou don't have enough money! Need $300."
+
+    left_click_commands:
+      - "[console] eco take %player_name% 300"
+      - "[console] give %player_name% rabbit_stew 1"
+      - "[message] &aPurchased Rabbit Stew!"
+
+    right_click_requirement:
+      requirements:
+        has_item:
+          type: has item
+          material: RABBIT_STEW
+          amount: 1
+
+      deny_commands:
+        - "[message] &cYou don't have Rabbit Stew to sell."
+
+    right_click_commands:
+      - "[console] clear %player_name% rabbit_stew 1"
+      - "[console] eco give %player_name% 100"
+      - "[message] &aSold Rabbit Stew for &e$100&a!"

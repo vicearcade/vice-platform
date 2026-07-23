@@ -1,0 +1,18 @@
+location: hub:0.500:34.656:-7.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&d&l✦ &6&lWELCOME TO THE NETWORK &d&l✦&7'
+    height: 0.3
+  - content: '&fWelcome in, &d%player_name%&f!'
+    height: 0.3
+  - content: '&fPlayers Online: &a%server_online%'
+    height: 0.3
+  - content: '&e&l[ ! ] &bRight-click the &dGamemode Selector &bto jump into the action!'
+    height: 0.3
+  actions: {}
